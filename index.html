@@ -16,7 +16,7 @@
 		author's website, you can find a copy at
 		<trimps.github.io/license.txt>). If not, see
 		<http://www.gnu.org/licenses/>. -->
-<div class="hello">
+<div class="trimps">
 	<noscript>
 	<div id="checkJavascript" style="position: absolute; height: 100%; width: 100%; font-size: 2vw; padding: 10%; color: white; background-color: black; z-index: 1000000;">
 		For some reason, your browser is having trouble loading this game. This game runs on javascript, and if you have an addon such as noscript, you may need to tell it to allow scripts from http://trimps.github.io, which is where this game is hosted.<br/><br/>
@@ -166,7 +166,8 @@
 			<div class="col-xs-4" id="resourceColumn">
 				<div class="row resourceRow">
 					<div class="col-xs-6 maxH">
-						<div id="food" class="playerGather">
+						<player-gather v-once :type="'food'" :ctype="'Food'" :verb="'Gather'"></player-gather>
+						<!-- <div id="food" class="playerGather">
 							<span class="title">Food</span>
 							<br/>
 							<span class="ownedArea bdHover" onclick="getMaxResources('Food')"><span id="foodOwned">0</span> / <span id="foodMax"></span></span>
@@ -184,7 +185,7 @@
 									<span class="psText sizeSecRegular pointer noselect" id="foodPs" onclick="getPsString('food')">+0/sec</span>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 
 					<div class="col-xs-6 maxH">
