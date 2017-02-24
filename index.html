@@ -166,7 +166,7 @@
 			<div class="col-xs-4" id="resourceColumn">
 				<div class="row resourceRow">
 					<div class="col-xs-6 maxH">
-						<player-gather v-once :type="'food'" :ctype="'Food'" :verb="'Gather'"></player-gather>
+						<player-gather :type="'food'" :ctype="'Food'" :verb="'Gather'" :has-max="true"></player-gather>
 						<!-- <div id="food" class="playerGather">
 							<span class="title">Food</span>
 							<br/>
@@ -189,7 +189,8 @@
 					</div>
 
 					<div class="col-xs-6 maxH">
-						<div id="wood" class="playerGather" style="visibility: hidden;">
+						<player-gather :type="'wood'" :ctype="'Wood'" :verb="'Chop'" :has-max="true" style="visibility: hidden;"></player-gather>
+						<!-- <div id="wood" class="playerGather" style="visibility: hidden;">
 							<span class="title">Wood</span>
 							<br/>
 							<span class="ownedArea bdHover" onclick="getMaxResources('Wood')"><span id="woodOwned">0</span> / <span id="woodMax"></span></span>
@@ -208,12 +209,13 @@
 									<span class="psText sizeSecRegular pointer noselect" id="woodPs" onclick="getPsString('wood')">+0/sec</span>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="row resourceRow">
 					<div class="col-xs-6 maxH">
-						<div id="metal" class="playerGather" style="visibility: hidden;">
+						<player-gather :type="'metal'" :ctype="'Metal'" :verb="'Mine'" :has-max="true" style="visibility: hidden;"></player-gather>
+						<!-- <div id="metal" class="playerGather" style="visibility: hidden;">
 							<span class="title">Metal</span>
 							<br/>
 							<span class="ownedArea bdHover" onclick="getMaxResources('Metal')"><span id="metalOwned">0</span> / <span id="metalMax"></span></span>
@@ -231,10 +233,11 @@
 									<span class="psText sizeSecRegular pointer noselect" id="metalPs" onclick="getPsString('metal')">+0/sec</span>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 					<div class="col-xs-6 maxH">
-						<div id="science" class="playerGather" style="visibility: hidden;">
+						<player-gather :type="'science'" :ctype="'Science'" :verb="'Research'" :has-max="false" style="visibility: hidden;"></player-gather>
+						<!-- <div id="science" class="playerGather" style="visibility: hidden;">
 							<span class="title">Science</span>
 							<br/>
 							<span class="ownedArea"><span id="scienceOwned">0</span></span>
@@ -247,7 +250,7 @@
 									<span class="psText sizeSecRegular pointer noselect" id="sciencePs" onclick="getPsString('science')">+0/sec</span>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
