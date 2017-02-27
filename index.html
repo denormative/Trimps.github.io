@@ -167,119 +167,25 @@
 				<div class="row resourceRow">
 					<div class="col-xs-6 maxH">
 						<player-gather :type="'food'" :ctype="'Food'" :verb="'Gather'" :has-max="true"></player-gather>
-						<!-- <div id="food" class="playerGather">
-							<span class="title">Food</span>
-							<br/>
-							<span class="ownedArea bdHover" onclick="getMaxResources('Food')"><span id="foodOwned">0</span> / <span id="foodMax"></span></span>
-							<br/>
-							<div class="progress resProgress">
-								<div class="progress-bar percentColorBlue" id="foodBar" role="progressbar">
-									<span id="foodTimeToFill"></span>
-								</div>
-							</div>
-							<div class="row collectRow">
-								<div class="col-xs-6">
-									<div id="foodCollectBtn" class="workBtn workColorOff pointer noselect" onclick="setGather('food')">Gather</div>
-								</div>
-								<div class="col-xs-6">
-									<span class="psText sizeSecRegular pointer noselect" id="foodPs" onclick="getPsString('food')">+0/sec</span>
-								</div>
-							</div>
-						</div> -->
 					</div>
 
 					<div class="col-xs-6 maxH">
 						<player-gather :type="'wood'" :ctype="'Wood'" :verb="'Chop'" :has-max="true" style="visibility: hidden;"></player-gather>
-						<!-- <div id="wood" class="playerGather" style="visibility: hidden;">
-							<span class="title">Wood</span>
-							<br/>
-							<span class="ownedArea bdHover" onclick="getMaxResources('Wood')"><span id="woodOwned">0</span> / <span id="woodMax"></span></span>
-							<br/>
-							<div class="progress resProgress">
-								<div class="progress-bar percentColorBlue" id="woodBar" role="progressbar">
-									<span id="woodTimeToFill"></span>
-								</div>
-							</div>
-
-							<div class="row collectRow">
-								<div class="col-xs-6">
-									<div id="woodCollectBtn" class="workBtn workColorOff pointer noselect" onclick="setGather('wood')">Chop</div>
-								</div>
-								<div class="col-xs-6">
-									<span class="psText sizeSecRegular pointer noselect" id="woodPs" onclick="getPsString('wood')">+0/sec</span>
-								</div>
-							</div>
-						</div> -->
 					</div>
 				</div>
 				<div class="row resourceRow">
 					<div class="col-xs-6 maxH">
 						<player-gather :type="'metal'" :ctype="'Metal'" :verb="'Mine'" :has-max="true" style="visibility: hidden;"></player-gather>
-						<!-- <div id="metal" class="playerGather" style="visibility: hidden;">
-							<span class="title">Metal</span>
-							<br/>
-							<span class="ownedArea bdHover" onclick="getMaxResources('Metal')"><span id="metalOwned">0</span> / <span id="metalMax"></span></span>
-							<br/>
-							<div class="progress resProgress">
-								<div class="progress-bar percentColorBlue" id="metalBar" role="progressbar">
-									<span id="metalTimeToFill"></span>
-								</div>
-							</div>
-							<div class="row collectRow">
-								<div class="col-xs-6">
-									<div id="metalCollectBtn" class="workBtn workColorOff pointer noselect" onclick="setGather('metal')">Mine</div>
-								</div>
-								<div class="col-xs-6">
-									<span class="psText sizeSecRegular pointer noselect" id="metalPs" onclick="getPsString('metal')">+0/sec</span>
-								</div>
-							</div>
-						</div> -->
 					</div>
 					<div class="col-xs-6 maxH">
 						<player-gather :type="'science'" :ctype="'Science'" :verb="'Research'" :has-max="false" style="visibility: hidden;"></player-gather>
-						<!-- <div id="science" class="playerGather" style="visibility: hidden;">
-							<span class="title">Science</span>
-							<br/>
-							<span class="ownedArea"><span id="scienceOwned">0</span></span>
-							<br/>
-							<div class="row collectRow">
-								<div class="col-xs-6">
-									<div id="scienceCollectBtn" class="workBtn workColorOff pointer noselect" onclick="setGather('science')">Research</div>
-								</div>
-								<div class="col-xs-6">
-									<span class="psText sizeSecRegular pointer noselect" id="sciencePs" onclick="getPsString('science')">+0/sec</span>
-								</div>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-1" id="miscColumn">
 				<player-gather :type="'fragments'" :ctype="'Fragments'" :is-small="true" :has-max="false" style="visibility: hidden;"></player-gather>
-				<!-- <div id="fragments" class="playerGather playerGatherSm" style="visibility: hidden;">
-					<span class="title">Fragments</span>
-					<br/>
-					<span class="ownedArea"><span id="fragmentsOwned">0</span></span>
-					<br/>
-					<span class="psText sizeSecRegular pointer noselect" id="fragmentsPs" style="display: none" onclick="getPsString('fragments')">+0/sec</span>
-				</div> -->
 				<player-gather :type="'gems'" :ctype="'Gems'" :is-small="true" :has-max="false" style="visibility: hidden;"></player-gather>
-				<!-- <div id="gems" class="playerGather playerGatherSm" style="visibility: hidden;">
-					<span class="title">Gems</span>
-					<br/>
-					<span class="ownedArea"><span id="gemsOwned">0</span></span>
-					<br/>
-					<span class="psText sizeSecRegular pointer noselect" id="gemsPs" style="display: none" onclick="getPsString('gems')">+0/sec</span>
-				</div> -->
-				<player-gather :type="'helium'" :ctype="'Helium'" :is-small="true" :is-ph="true" :has-max="false" style="visibility: hidden;"></player-gather>
-				<!-- <div id="helium" class="playerGather playerGatherSm" style="display: none">
-					<span class="title">Helium</span>
-					<br/>
-					<span class="ownedArea"><span id="heliumOwned">0</span></span>
-					<br/>
-					<span id="heliumPh" class="heliumPh"></span>
-
-				</div> -->
+				<player-gather :type="'helium'" :ctype="'Helium'" :is-small="true" :is-ph="true" :has-max="false" style="display: none"></player-gather>
 			</div>
 			<div class="col-xs-2" id="trimpsColumn">
 				<div id="trimps" class="playerGather" style="visibility: hidden;">
