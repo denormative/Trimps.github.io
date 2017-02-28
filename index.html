@@ -783,13 +783,20 @@
 			</div>
 			<div id="challengeCol" class="col-xs-5">
 				<div id="viewChallenge" style="display: none">
+				<div style='text-align: center'><span class="thing thingColorSquared pointer" style='width: 50%; display: inline-block;'  onmouseover="tooltip('Challenge2', null, event, true)" onmouseout="tooltip('hide')" id='challengeSquaredViewBtn'>Challenge<sup>2</sup> - <span id='challengeSquaredBonusAmtView'>0</span>% bonus</span></div>
 					<span id="viewChallengeText">You do not currently have an active challenge.</span>
 				<br/><br/>
 				<div class="btn btn-warning inPortalBtn" style="display: none" id="cancelChallengeBtn" onclick="confirmAbandonChallenge()">Abandon Challenge</div>
 
 				</div>
 				<div id="challenges"  style="display: none">
-					<div class="challengeTitle">Challenges</div>
+					<div id='challengeTitleNoSquared'>
+						<div class="challengeTitle">Challenges</div>
+					</div>
+					<div id='challengeTitleSquared' style='display: none'>
+						<div class="challengeTitle" style='display: inline-block; width: 50%; padding: 0; margin: 0;'>Challenges</div><div style='display: inline-block; width: 50%; padding: 0; margin: 0;'><span class="thing thingColorSquared pointer" style='width: 75%; display: inline-block;' onclick="toggleChallengeSquared()"  onmouseover="tooltip('Challenge2', null, event)" onmouseout="tooltip('hide')">Challenge<sup>2</sup> - <span id='challengeSquaredBonusAmt'>0</span>% bonus</span></div>
+					</div>
+
 					<div id="challengeDescription">
 						<span id="challengeDescriptionPre">You can also choose to activate a challenge before using your portal. Completing a challenge will earn you a permanent reward. You can abandon or view an active challenge at any time by clicking the "View Perks" button.</span>
 						<span id="flagMustRestart" style="display: none;"><b>If you abandon this challenge, the portal will become unstable and the world will restart (you'll keep permanent bonuses like helium)</b></span>
